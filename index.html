@@ -72,17 +72,17 @@
         </ul>
       </div>
       <div class="header__location">
-        <button class="location-button" role="button">
+        <div class="location-button" role="button">
           <div class="location-button__icon"></div>
           <div class="location-button__text">
             Санкт-Петербург
           </div>
-        </button>
+        </div>
       </div>
       <div class="header__phone">
         <div class="phone-link">
           <div class="phone-link__icon"></div>
-          <a href="tel:88005009926" class="phone-link__text">
+          <a href="tel:88005009926" class="phone-link__number">
             8 800 500-99-26
           </a>
         </div>
@@ -114,7 +114,7 @@
           </li>
         </ul>
       </div>
-      <div class="palette-button"></div>
+      <div class="brush-button"></div>
       <div class="cart-button"></div>
     </div>
   </header>
@@ -217,8 +217,13 @@
       slidesPerView: 1,
       breakpoints: {
         768: {
-          slidesPerView: 3
-        }
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        // 1440: {
+        //   slidesPerView: 3,
+        //   // spaceBetween: -400,
+        // }
       },
       rewind: true
     });
