@@ -18,6 +18,17 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+    rel="stylesheet"
+  >
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -83,6 +94,7 @@
     <div class="header__bottom">
       <div class="personal-button"></div>
       <div class="site-logo"></div>
+      <div class="menu-button"></div>
       <div class="header__pc-categories">
         <ul class="pc-categories">
           <li class="pc-categories__item">
@@ -105,90 +117,111 @@
       <div class="palette-button"></div>
       <div class="cart-button"></div>
     </div>
-    <main class="main">
-      <div class="main__top">
-        <div class="main__back-button">
-          <div class="back-button"></div>
-        </div>
-        <div class="main__page-label">
-          <div class="page-label"></div>
-        </div>
-      </div>
-      <div class="pc-builds">
-        <div class="current-builds">
-          <div class="no-builds-caption">
-            <div class="no-builds-caption__top">
-              Здесь пока ничего нет...
-            </div>
-            <div class="no-builds-caption__bottom">
-              Начни создавать свой ПК
-            </div>
-          </div>
-          <div class="swiper js-pc-categories-swiper">
-            <div class="swiper-wrapper">
-              <div class="pc-category-card swiper-slide">
-                <figure class="pc-category-card__image-container">
-                  <img
-                    class="pc-category-card__image"
-                    src="./img/pc-category-1.png"
-                    alt=""
-                  >
-                  <figcaption>Игровые компьютеры</figcaption>
-                </figure>
-                <div class="pc-category-card__description">
-                  Создаем системы с учетом требований геймеров и энтузиастов
-                </div>
-                <div class="pc-category-card__details-button">
-                  <div class="details-button">
-                    <div class="details-button__text">Подробнее</div>
-                    <div class="details-button__arrow"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="pc-category-card swiper-slide">
-                <figure class="pc-category-card__image-container">
-                  <img
-                    class="pc-category-card__image"
-                    src="./img/pc-category-2.png"
-                    alt=""
-                  >
-                  <figcaption>Рабочие станции</figcaption>
-                </figure>
-                <div class="pc-category-card__description">
-                  Высокопроизводительные станции созданные для работы в профессиональных пакетах 3D-моделирования и анимации
-                </div>
-                <div class="pc-category-card__details-button">
-                  <div class="details-button">
-                    <div class="details-button__text">Подробнее</div>
-                    <div class="details-button__arrow"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="pc-category-card swiper-slide">
-                <figure class="pc-category-card__image-container">
-                  <img
-                    class="pc-category-card__image"
-                    src="./img/pc-category-3.png"
-                    alt=""
-                  >
-                  <figcaption>Моноблоки</figcaption>
-                </figure>
-                <div class="pc-category-card__description">
-                  Вмещает в себя всё необходимое и экономит рабочее пространство
-                </div>
-                <div class="pc-category-card__details-button">
-                  <div class="details-button">
-                    <div class="details-button__text">Подробнее</div>
-                    <div class="details-button__arrow"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
   </header>
+  <main class="main">
+    <div class="main__top">
+      <div class="main__back-button">
+        <div class="back-button"></div>
+      </div>
+      <div class="main__page-label">
+        <div class="page-label">Твой ПК</div>
+      </div>
+    </div>
+    <div class="no-builds-caption">
+      Здесь пока ничего нет...
+      <div class="no-builds-caption__tagline">
+        Начни создавать свой ПК
+      </div>
+    </div>
+    <div class="swiper js-pc-categories-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="pc-category-card">
+            <div class="pc-category-card__image-container">
+              <img
+                class="pc-category-card__image"
+                src="./img/pc-category-1.png"
+                alt=""
+              >
+            </div>
+            <div class="pc-category-card__name">Игровые компьютеры</div>
+            <div class="pc-category-card__description">
+              Создаем системы с учетом требований геймеров и энтузиастов
+            </div>
+            <div class="pc-category-card__buy-button">
+              <div class="buy-button">
+                <div class="buy-button__text">Подробнее</div>
+                <div class="buy-button__arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="pc-category-card">
+            <div class="pc-category-card__image-container">
+              <img
+                class="pc-category-card__image"
+                src="./img/pc-category-2.png"
+                alt=""
+              >
+            </div>
+            <div class="pc-category-card__name">Рабочие станции</div>
+            <div class="pc-category-card__description">
+              Высокопроизводительные станции созданные для работы в профессиональных пакетах 3D-моделирования и анимации
+            </div>
+            <div class="pc-category-card__buy-button">
+              <div class="buy-button">
+                <div class="buy-button__text">Подробнее</div>
+                <div class="buy-button__arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="pc-category-card">
+            <div class="pc-category-card__image-container">
+              <img
+                class="pc-category-card__image"
+                src="./img/pc-category-3.png"
+                alt=""
+              >
+            </div>
+            <div class="pc-category-card__name">Моноблоки</div>
+            <div class="pc-category-card__description">
+              Вмещает в себя всё необходимое и экономит рабочее пространство
+            </div>
+            <div class="pc-category-card__buy-button">
+              <div class="buy-button">
+                <div class="buy-button__text">Подробнее</div>
+                <div class="buy-button__arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    new Swiper(".js-pc-categories-swiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      slidesPerView: 1,
+      breakpoints: {
+        768: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
