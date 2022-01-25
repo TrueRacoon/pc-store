@@ -235,10 +235,6 @@ body {
   font-size: 24px;
 }
 
-.swiper-wrapper {
-  justify-content: center;
-}
-
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -397,6 +393,10 @@ body {
 
   .no-builds-caption__tagline {
     font-size: 48px;
+  }
+
+  .swiper-wrapper {
+    justify-content: center;
   }
 
   .swiper-slide {
